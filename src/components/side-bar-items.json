@@ -1,0 +1,36 @@
+[
+  {
+    "label": "A",
+    "id": "aaa",
+    "subItems": [
+
+    ]
+  },
+  {
+    "label": "B",
+    "id": "bbb",
+    "subItems": [
+      {
+        "label": "B A",
+        "id": "ddd",
+        "subItems": [
+
+        ]
+      },
+      {
+        "label": "B B",
+        "id": "eee",
+        "subItems": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "label": "C",
+    "id": "ccc",
+    "subItems": [
+
+    ]
+  }
+]
