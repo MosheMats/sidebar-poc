@@ -1,0 +1,50 @@
+{
+  "definitions": {
+    "module-x": {
+      "label": "module-x-label",
+      "id": "module-x",
+      "permission:"
+      "subItems": [
+        {
+          "label": "general info",
+          "id": "2",
+          "subItems": []
+        },
+        {
+          "label": "payments",
+          "id": "3",
+          "subItems": []
+        }
+      ]
+    }
+  },
+  "tree": [
+    {
+      "label": "home",
+      "id": "0",
+      "subItems": [
+      ]
+    },
+    {
+      "label": "module-x-position-a",
+      "id": "module-x",
+      "subItems": [
+        {
+          "label": "general info",
+          "id": "2",
+          "subItems": []
+        },
+        {
+          "label": "payments",
+          "id": "3",
+          "subItems": []
+        }
+      ]
+    },
+    {
+      "label": "apps",
+      "id": "4",
+      "subItems": []
+    }
+  ]
+}

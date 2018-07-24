@@ -1,4 +1,7 @@
-const buildAddOnClick = ({ navigateTo }) => {
+import { SideBarUINode } from '../reducers/items-reducer';
+import { SideBarUIItem } from './redux/SideBar';
+
+export const buildAddOnClick = ({ navigateTo }) => {
   const addOnClick = items => {
     return items.map(item => {
       const subItems = addOnClick(item.subItems);
@@ -17,21 +20,22 @@ const buildAddOnClick = ({ navigateTo }) => {
   };
 };
 
+export const asSideBarUIItems = (items: SideBarUINode[], activeItemId: string): SideBarUIItem[] => {
+  return items.map(({ id, label, onClick }) => ({
+    id,
+    onClick,
+    label,
+    active: id === activeItemId
+  }));
+};
+
 export const buildItemsFetcher = ({ onItemsReady }) => {
   let map;
-  let activeItemId = 'aaa';
+  let activeItemId = '0';
   let currentItems;
 
   const updateItems = () => {
-    currentItems = map[activeItemId].map(item => {
-      if (item.id !== activeItemId) {
-        return item;
-      }
-      return {
-        ...item,
-        active: true
-      };
-    });
+    currentItems = asSideBarUIItems(map[activeItemId], activeItemId);
     onItemsReady(currentItems);
   };
 

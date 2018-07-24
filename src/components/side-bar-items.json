@@ -1,36 +1,30 @@
 [
   {
-    "label": "A",
-    "id": "aaa",
+    "label": "home",
+    "id": "0",
     "subItems": [
 
     ]
   },
   {
-    "label": "B",
-    "id": "bbb",
+    "label": "settings",
+    "id": "1",
     "subItems": [
       {
-        "label": "B A",
-        "id": "ddd",
-        "subItems": [
-
-        ]
+        "label": "general info",
+        "id": "2",
+        "subItems": []
       },
       {
-        "label": "B B",
-        "id": "eee",
-        "subItems": [
-
-        ]
+        "label": "payments",
+        "id": "3",
+        "subItems": []
       }
     ]
   },
   {
-    "label": "C",
-    "id": "ccc",
-    "subItems": [
-
-    ]
+    "label": "apps",
+    "id": "4",
+    "subItems": []
   }
 ]
