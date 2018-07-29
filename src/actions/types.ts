@@ -1,2 +1,3 @@
 export const FETCH_ITEMS = 'FETCH_ITEMS';
 export const NAVIGATE_TO = 'NAVIGATE_TO';
+export const UPDATE_ACTIVE_ITEM = 'UPDATE_ACTIVE_ITEM';
